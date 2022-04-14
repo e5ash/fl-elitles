@@ -1,3 +1,8 @@
 export default {
-  name: 'Product'
+  name: 'Product',
+  props: {
+    classParent: String,
+    title: String,
+    image: String
+  }
 }

@@ -1,3 +1,6 @@
 export default {
-  name: 'Info'
+  name: 'Info',
+  props: {
+    title: String
+  }
 }

@@ -1,3 +1,24 @@
 export default {
-  name: 'Offer'
+  name: 'Offer',
+  data() {
+    return {
+      items: [
+        {
+          image: ''
+        },
+        {
+          image: ''
+        },
+        {
+          image: ''
+        },
+        {
+          image: ''
+        },
+        {
+          image: ''
+        },
+      ]
+    }
+  }
 }

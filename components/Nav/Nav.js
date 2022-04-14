@@ -20,7 +20,6 @@ export default {
           title: 'Контакты'
         },
       ],
-      classParent: this.classParent ? this.classParent : ''
     }
   },
   props: {
