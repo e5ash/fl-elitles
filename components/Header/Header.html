@@ -2,8 +2,8 @@
   <div class="header__panel">
     <div class="case">
       <div class="header__contacts">
-        <div class="header__contact"></div>
-        <div class="header__contact"></div>
+        <div class="header__contact">Ленинградская область, деревня Екатериновка, 8-Марта, 188</div>
+        <div class="header__contact">Пн-Пт 9:00 - 18:00, Сб-Вс - выходной</div>
         <Crt />
       </div>
     </div>
@@ -11,12 +11,9 @@
   <div class="header__inner">
     <div class="case">
       <div class="header__wrap">
-        <Logo :parentCls="header__logo" />
-        <Nav :parentCls="header__nav" />
-        <div class="header__phone">
-        </div>
-
-
+        <Logo :classParent="header__logo" />
+        <Nav :classParent="header__nav" />
+        <div class="header__phone"><a href="tel:"></a></div>
       </div>
     </div>
   </div>
