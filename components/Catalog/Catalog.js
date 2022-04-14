@@ -65,5 +65,22 @@ export default {
         },
       ]
     }
+  },
+  methods: {
+    getItems() {
+      let arr;
+      
+      if (this.limit) {
+        arr = this.items.slice(0, limit);
+      } else {
+        arr = this.items;
+      }
+
+      return arr;
+    }
+  },
+  props: {
+    title: String,
+    limit: Number
   }
 }
