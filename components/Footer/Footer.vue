@@ -1,3 +1,5 @@
-<template src="./Footer.html"></template>
+<template>
+  
+</template>
 <script src="./Footer.js"></script>
 <style src='./Footer.scss'></style>

@@ -1,6 +1,11 @@
-export default defineNuxtLink({
-  componentName: 'Logo',
-  externalRelAttribute: '',
-  activeClass: 'active',
-  exactActiveClass: 'exact-active'
-})
+export default {
+  name: 'Logo',
+  data() {
+    return {
+      classParent: this.classParent ? this.classParent : ''
+    }
+  },
+  props: {
+    classParent: String
+  }
+}

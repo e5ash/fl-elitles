@@ -4,22 +4,26 @@ export default {
     return {
       links: [
         {
-          link: '',
+          href: '/catalog',
           title: 'Каталог'
         },
         {
-          link: '',
+          href: '/about',
           title: 'О компании'
         },
         {
-          link: '',
+          href: '/delivery-pay',
           title: 'Доставка и оплата'
         },
         {
-          link: '',
+          href: '/contacts',
           title: 'Контакты'
         },
-      ]
+      ],
+      classParent: this.classParent ? this.classParent : ''
     }
+  },
+  props: {
+    classParent: String
   }
 }
