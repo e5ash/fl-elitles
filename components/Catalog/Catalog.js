@@ -70,6 +70,8 @@ export default {
     getItems() {
       let arr;
       
+      console.log(this.limit);
+      console.log(this.items.slice(0, 5));
       if (this.limit) {
         arr = this.items.slice(0, limit);
       } else {
