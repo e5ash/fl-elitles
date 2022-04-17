@@ -5,10 +5,10 @@
         <div class="intro__title h1">Погонажные изделия <br> из сибирской лиственницы</div>
         <Button classParent="intro__button" mods="md, green" href="/catalog">Посмотреть каталог</Button>
       </div>
-      <Advantages classParent="intro__advantages" />
     </div>
+    <Advantages classParent="intro__advantages" />
     <div class="intro__bg bg">
-      <img src="~/assets/intro-bg.png" alt="">
+      <img src="~assets/images/intro-bg.jpg" alt="">
     </div>
   </div>
 </template>

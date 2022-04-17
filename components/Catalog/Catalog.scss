@@ -1,0 +1,11 @@
+.catalog {
+  &__list {
+    margin: 0 -5px -45px;
+  }
+  &__item {
+    width: calc(100% / 5);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 0 45px;
+  }
+}

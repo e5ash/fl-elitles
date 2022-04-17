@@ -1,0 +1,35 @@
+.breadcrumb {
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  background: rgba(32, 32, 32, 0.6);
+  .case {
+    * {
+      display: inline;
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    font-size: 14px;
+    line-height: 16px;
+    &:after {
+      content: '/';
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+    &:last-of-type {
+      color: #BEBEBE;
+      &:after {
+        display: none;
+      }
+    }
+    a {
+      color: #fff;
+      &:hover {
+        border-color: #fff;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <template>
   <div class="info block">
     <div class="case">
-      <div class="info__title h2">{{ title }}</div>
+      <div class="info__title block__title h2">{{ title }}</div>
       <div class="info__wrap row">
         <div class="info__left">
           <slot name="left"></slot>

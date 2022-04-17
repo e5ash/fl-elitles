@@ -3,6 +3,7 @@ export default {
   props: {
     classParent: String,
     title: String,
-    image: String
+    image: String,
+    href: String
   }
 }

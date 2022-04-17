@@ -1,0 +1,39 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 137px;
+  margin-top: -137px;
+  min-height: calc(100vh);
+  &__inner {
+    padding-bottom: 145px;
+  }
+  &__title {
+    color: #fff;
+    margin-bottom: 45px;
+  }
+  &__button {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__advantages {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background: rgba(32, 32, 32, 0.6);
+  }
+  &__bg {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.4);
+    }
+  }
+}

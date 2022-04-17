@@ -1,3 +1,5 @@
+const imagesPath = 'assets/images/advantages/';
+
 export default {
   name: 'Advantages',
   data() {
@@ -5,23 +7,23 @@ export default {
       items: [
         {
           title: 'Непосредственный производитель продукции',
-          image: ''
+          image: imagesPath + 'saw.svg'
         },
         {
           title: 'Большое <br>количество товаров <br>в наличии',
-          image: ''
+          image: imagesPath + 'building.svg'
         },
         {
-          title: 'Работаем с физ. и юр. лицами, с НДС и без НДС',
-          image: ''
+          title: 'Работаем с физ. и <br>юр. лицами, с НДС <br>и без НДС',
+          image: imagesPath + 'doc.svg'
         },
         {
           title: 'Изделия соответ-ствуют нормативам <br>и ГОСТам',
-          image: ''
+          image: imagesPath + 'certificate.svg'
         },
         {
           title: 'Принимаем оплату безналичным и наличным расчетом',
-          image: ''
+          image: imagesPath + 'purse.svg'
         },
       ]
     }

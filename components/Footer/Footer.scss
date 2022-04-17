@@ -1,0 +1,30 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  color: #fff;
+  background: #393939;
+  &__left {
+    width: 375px;
+    padding-top: 4px;
+  }
+  &__copy {
+    line-height: 1.7;
+    font-weight: 300;
+    margin-top: 28px;
+  }
+  &__mid {
+    width: 300px;
+    padding-right: 20px;
+    margin-left: auto;
+  }
+  &__right {
+    width: 370px;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+}

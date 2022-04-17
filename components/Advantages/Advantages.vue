@@ -4,7 +4,7 @@
       <div class="advantages__list row">
         <div class="advantages__item" v-for="item in items" :key="item.id">
           <div class="advantages__icon">
-            <img src="~/assets/advantages/{{ item.image }}" alt="">
+            <img :src="item.image" alt="">
           </div>
           <div class="advantages__name" v-html="item.title"></div>
         </div>

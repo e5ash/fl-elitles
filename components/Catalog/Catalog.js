@@ -1,3 +1,5 @@
+const imagesPath = '/assets/images/catalog/';
+
 export default {
   name: 'Catalog',
   data() {
@@ -5,84 +7,87 @@ export default {
       items: [
         {
           title: 'Вагонка штиль',
-          image: ''
+          image: imagesPath + 'vagonka-shtil.jpg'
         },
         {
           title: 'Имитация бруса',
-          image: ''
+          image: imagesPath + 'imitacija-brusa.jpg'
         },
         {
           title: 'Планкен прямой',
-          image: ''
+          image: imagesPath + 'planken-prjamoj.jpg'
         },
         {
           title: 'Планкен скошенный',
-          image: ''
+          image: imagesPath + 'planken-skoshennyj.jpg'
         },
         {
           title: 'Доска пола',
-          image: ''
+          image: imagesPath + 'doska-pola.jpg'
         },
         {
           title: 'Доска палубная',
-          image: ''
+          image: imagesPath + 'doska-palubnaja.jpg'
         },
         {
           title: 'Доска террасная',
-          image: ''
+          image: imagesPath + 'doska-terrasnaja.jpg'
         },
         {
           title: 'Лага для террасной доски',
-          image: ''
+          image: imagesPath + 'laga-dlja-terrasnoj-doski.jpg'
         },
         {
           title: 'Доска обрезная',
-          image: ''
+          image: imagesPath + 'doska-obreznaja.jpg'
         },
         {
           title: 'Мебельный щит',
-          image: ''
+          image: imagesPath + 'mebelnyj-shhit.jpg'
         },
         {
           title: 'Паркетная доска',
-          image: ''
+          image: imagesPath + 'parketnaja-doska.jpg'
         },
         {
           title: 'Браширование древесины',
-          image: ''
+          image: imagesPath + 'brashirovanie-drevesiny.jpg'
         },
         {
           title: 'Покраска пиломатериалов на производстве',
-          image: ''
+          image: imagesPath + 'pokraska-pilomaterialov.jpg'
         },
         {
           title: 'Крепёж',
-          image: ''
+          image: imagesPath + 'krepjozh.jpg'
         },
         {
           title: 'Масло для наружных и внутренних работ',
-          image: ''
+          image: imagesPath + 'maslo.jpg'
         },
       ]
+    }
+  },
+  computed: {
+    limitValue() {
+      if (this.limit) {
+        return Number(this.limit);
+      } else {
+        return this.items.length;
+      }
     }
   },
   methods: {
     getItems() {
       let arr;
-      
-      console.log(this.limit);
-      console.log(this.items.slice(0, 5));
-      if (this.limit) {
-        arr = this.items.slice(0, limit);
-      } else {
-        arr = this.items;
-      }
+
+      arr = this.items.slice(0, this.limitValue);
 
       return arr;
     }
   },
   props: {
     title: String,
-    limit: Number
+    limit: Number,
   }
 }

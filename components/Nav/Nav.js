@@ -23,6 +23,7 @@ export default {
     }
   },
   props: {
-    classParent: String
+    classParent: String,
+    mods: String
   }
 }

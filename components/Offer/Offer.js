@@ -1,22 +1,24 @@
+const imagesPath = 'assets/images/catalog/';
+
 export default {
   name: 'Offer',
   data() {
     return {
       items: [
         {
-          image: ''
+          image: imagesPath + 'doska-palubnaja.jpg'
         },
         {
-          image: ''
+          image: imagesPath + 'doska-terrasnaja.jpg'
         },
         {
-          image: ''
+          image: imagesPath + 'laga-dlja-terrasnoj-doski.jpg'
         },
         {
-          image: ''
+          image: imagesPath + 'doska-obreznaja.jpg'
         },
         {
-          image: ''
+          image: imagesPath + 'mebelnyj-shhit.jpg'
         },
       ]
     }

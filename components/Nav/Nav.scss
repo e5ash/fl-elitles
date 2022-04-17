@@ -1,0 +1,45 @@
+@import "~styles/vars";
+
+.nav {
+  &_white {
+    .nav {
+      &__item {
+        color: #fff;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+  &_fw300 {
+    .nav {
+      &__item {
+        font-weight: 300;
+      }
+    }
+  }
+  &_row {
+    .nav {
+      &__item {
+        margin-right: 35px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &_col {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .nav {
+      &__item {
+        margin-bottom: 10px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+@import '~styles/vars.scss';
+
+.crt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $green;
+  &__icon {
+    width: 22px;
+    margin-right: 18px;
+  }
+  &__values {
+    color: #fff;
+    b {
+      font-weight: 700;
+    }
+  }
+  &:hover {
+    background: darken($green, 5%);
+  }
+}

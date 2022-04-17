@@ -1,10 +1,12 @@
-import { Logo, Crt, Nav } from '#components';
-
 export default {
   name: 'Header',
-  components: {
-    Logo,
-    Crt,
-    Nav
+  computed: {
+    isMain() {
+      if (this.$route.path == '/') {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 }
