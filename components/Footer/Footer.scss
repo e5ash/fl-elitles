@@ -153,3 +153,19 @@
 
   }
 }
+
+@media screen and (max-width: 410px) {
+  .footer {
+    &__logo {
+      svg {
+        width: 150px;
+      }
+    }
+  }
+
+  .fcont {
+    &__title {
+      font-size: 14px;
+    }
+  }
+}

@@ -90,6 +90,14 @@
       height: 220px;
     }
 
+    &_contacts {
+      .info {
+        &__text {
+          padding-right: 50px;
+        }
+      }
+    }
+
   }
 }
 
@@ -98,6 +106,14 @@
   .info {
     &__img {
       height: 180px;
+    }
+
+    &_contacts {
+      .info {
+        &__text {
+          padding-right: 70px;
+        }
+      }
     }
   }
 }

@@ -286,6 +286,15 @@ line {
     width: 390px;
   }
 
+  .block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+
   .h1 {
     font-size: 35px;
   }
@@ -303,6 +312,14 @@ line {
 @media screen and (max-width: 410px) {
   .case {
     width: 100%;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h2 {
+    font-size: 24px;
   }
 
   .t1 {
