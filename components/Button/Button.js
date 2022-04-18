@@ -2,7 +2,7 @@ export default {
   name: 'Button',
   data() {
     return {
-      name: 'button',
+      block: 'button',
       compMods: []
     }
   },
@@ -11,7 +11,7 @@ export default {
       let arr = [];
 
       this.compMods.map((mod)=>{
-        mod = `${this.name}_${mod}`;
+        mod = `${this.block}_${mod}`;
         arr.push(mod);
       });
 

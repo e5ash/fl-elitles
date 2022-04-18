@@ -1,5 +1,7 @@
 <template>
-  <!-- <Order /> -->
+  <div>
+    <Cart />
+  </div>
 </template>
 <script setup>
   definePageMeta({

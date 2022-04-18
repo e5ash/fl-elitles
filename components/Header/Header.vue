@@ -1,5 +1,5 @@
 <template>
-  <header class="header bgw">
+  <header class="header bgw" id="header">
     <div class="header__panel">
       <div class="case">
         <div class="header__panel-wrap row">

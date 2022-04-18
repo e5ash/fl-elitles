@@ -89,5 +89,6 @@ export default {
   props: {
     title: String,
     limit: Number,
+    href: String
   }
 }

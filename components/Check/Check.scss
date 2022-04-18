@@ -1,0 +1,26 @@
+@import '~styles/vars';
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6.5px 14.5px 5.5px;
+  transition: .3s;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #BEBEBE;
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  &_checked {
+    color: $green;
+    border-color: $green;
+    cursor: default;
+  }
+}

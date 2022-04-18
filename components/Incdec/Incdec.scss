@@ -1,0 +1,31 @@
+@import '~styles/vars';
+
+.incdec {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+  &__button, &__input {
+    height: 100%;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    color: $green;
+    width: 30px;
+    cursor: pointer;
+  }
+  &__input {
+    display: block;
+    font-size: $fzMain;
+    font-family: $ffMain;
+    text-align: center;
+    color: #706F6F;
+    font-weight: 700;
+    width: calc(100% - 60px);
+  }
+}

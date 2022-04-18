@@ -4,10 +4,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: ceter;
+  text-align: center;
   font-size: $fzMain;
   font-family: $ffMain;
   cursor: pointer;
+  transition: .3s;
+  &_xs {
+    font-size: 12px;
+    min-height: 30px;
+  }
+  &_sm {
+    min-height: 40px;
+  }
   &_md {
     min-height: 52px;
   }

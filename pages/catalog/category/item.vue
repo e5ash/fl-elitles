@@ -1,5 +1,5 @@
 <template>
-  <p>Hello</p>
+  <Card />
 </template>
 <script setup>
   definePageMeta({
