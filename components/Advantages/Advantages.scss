@@ -1,8 +1,10 @@
 .advantages {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+
   &__list {
     border-left: 1px solid rgba(255, 255, 255, 0.3);
   }
+
   &__item {
     display: flex;
     align-items: center;
@@ -10,12 +12,31 @@
     padding: 20px 15px 20px 20px;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
   }
+
   &__icon {
     margin-right: 19px;
   }
+
   &__name {
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .advantages {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__icon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    &__name {
+      text-align: center;
+    }
   }
 }
