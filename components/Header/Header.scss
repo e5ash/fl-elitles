@@ -129,3 +129,21 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header {
+    &__contacts {
+      width: calc(100% - 60px);
+      padding-right: 30px;
+    }
+
+    &__contact {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    &__cart {
+      width: 60px;
+    }
+  }
+}

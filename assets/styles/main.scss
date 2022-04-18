@@ -230,6 +230,11 @@ line {
   .case {
     width: 960px;
   }
+
+  .h1 {
+    font-size: 50px;
+  }
+
 }
 
 
@@ -239,6 +244,11 @@ line {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .h1 {
+    font-size: 45px;
+  }
+
 
   .block {
     padding-top: 75px;
@@ -255,6 +265,19 @@ line {
   .case {
     width: 560px;
   }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .h2 {
+    font-size: 30px;
+  }
+
+  .block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 
@@ -262,11 +285,31 @@ line {
   .case {
     width: 390px;
   }
+
+  .h1 {
+    font-size: 35px;
+  }
+
+  .h2 {
+    font-size: 27px;
+  }
+
+  .t1 {
+    font-size: 15px;
+  }
 }
 
 
 @media screen and (max-width: 410px) {
   .case {
     width: 100%;
+  }
+
+  .t1 {
+    font-size: 14px;
+  }
+
+  .t2 {
+    font-size: 14px;
   }
 }

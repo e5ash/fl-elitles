@@ -75,3 +75,29 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .info {
+    &__img {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .info {
+    &__img {
+      height: 220px;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 410px) {
+  .info {
+    &__img {
+      height: 180px;
+    }
+  }
+}

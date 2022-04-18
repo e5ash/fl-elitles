@@ -41,3 +41,23 @@
     }
   }
 }
+
+@media screen and (max-width: 580px) {
+  .product {
+    &__img {
+      height: 190px;
+    }
+
+    &__name {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .product {
+    &__img {
+      height: 210px;
+    }
+  }
+}
