@@ -59,3 +59,13 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    &_row .nav {
+      &__item {
+        margin-right: 15px;
+      }
+    }
+  }
+}
