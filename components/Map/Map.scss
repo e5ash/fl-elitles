@@ -2,10 +2,20 @@
   &_sm {
     height: 380px;
   }
+
   &_md {
     height: 524px;
   }
+
   &_mb {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map {
+    &_md {
+      height: 400px;
+    }
   }
 }

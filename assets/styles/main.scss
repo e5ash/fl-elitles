@@ -236,6 +236,17 @@ line {
 @media screen and (max-width: 992px) {
   .case {
     width: 730px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .block {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
   }
 }
 

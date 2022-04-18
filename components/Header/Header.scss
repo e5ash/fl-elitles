@@ -9,6 +9,8 @@
   }
 
   &__contacts {
+    width: calc(100% - 218px);
+    padding-right: 40px;
     align-items: center;
   }
 
@@ -95,6 +97,35 @@
   .header {
     &__nav {
       margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    &__contacts {
+      width: calc(100% - 170px);
+      padding-right: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__contact {
+      margin-bottom: 5px;
+
+      &::after {
+        display: none;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &__cart {
+      width: 170px;
+      height: 55px;
     }
   }
 }

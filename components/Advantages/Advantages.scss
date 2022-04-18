@@ -40,3 +40,25 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .advantages {
+    &__item {
+      width: calc(100% / 3);
+      padding: 10px 20px;
+
+      &:nth-of-type(4),
+      &:nth-of-type(5) {
+        width: calc(100% / 2);
+        border-top: 1px solid hsla(0, 0%, 100%, .3);
+        padding: 10px 60px;
+      }
+    }
+
+    &__name {
+      br {
+        display: none;
+      }
+    }
+  }
+}

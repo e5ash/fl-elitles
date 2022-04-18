@@ -49,3 +49,54 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__left {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__logo {
+      svg {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__copy {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    &__mid {
+      order: 3;
+      width: 50%;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    &__nav {
+      &.nav_col {
+        align-items: flex-end;
+
+        .nav {
+          &__item {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 50%;
+      order: 2;
+    }
+  }
+}
