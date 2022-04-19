@@ -24,6 +24,7 @@ export default {
   },
   props: {
     classParent: String,
+    classOpen: String,
     mods: String
   }
 }

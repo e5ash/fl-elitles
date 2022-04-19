@@ -25,8 +25,6 @@ export default {
     this.totalCount = getLsCount();
     this.totalSum = getLsSum();
     this.products = getLsProducts();
-
-    console.log(this.products);
   },
   props: {
     classParent: String

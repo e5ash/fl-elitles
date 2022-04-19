@@ -11,6 +11,7 @@ const title = route.meta.title;
 useState('totalCount', () => 0);
 useState('totalSum', () => 0);
 useState('cart', () => []);
+useState('isMapLoaded', () => false)
 
 useHead({
   title: `${title} - ЭЛИТЛЕС`,

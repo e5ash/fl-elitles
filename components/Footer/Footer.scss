@@ -4,28 +4,169 @@
   color: #fff;
   background: #393939;
   margin-top: auto;
+
   &__left {
     width: 375px;
     padding-top: 4px;
   }
+
   &__copy {
     line-height: 1.7;
     font-weight: 300;
     margin-top: 28px;
   }
+
   &__mid {
     width: 300px;
     padding-right: 20px;
     margin-left: auto;
   }
+
   &__right {
     width: 370px;
   }
+
   &__title {
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 17px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .footer {
+    &__left {
+      width: 300px;
+    }
+
+    &__mid {
+      width: 220px;
+    }
+
+    &__right {
+      width: 310px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__left {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__logo {
+      svg {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__copy {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    &__mid {
+      order: 3;
+      width: 49%;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      padding-right: 0;
+    }
+
+    &__nav {
+      &.nav_col {
+        align-items: flex-end;
+
+        .nav {
+          &__item {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 51%;
+      order: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    &__left {
+      margin-bottom: 40px;
+    }
+
+    &__logo {
+      svg {
+        width: 170px;
+        margin-left: 0;
+      }
+    }
+
+    &__copy {
+      font-size: 14px;
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    &__right {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__mid {
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    &__nav {
+      &.nav_col {
+        align-items: flex-start;
+
+        .nav {
+          &__item {
+            margin-bottom: 12px;
+          }
+        }
+      }
+
+    }
+
+    &__title {
+      font-size: 17px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .footer {
+    &__logo {
+      svg {
+        width: 150px;
+      }
+    }
+  }
+
+  .fcont {
+    &__title {
+      font-size: 14px;
+    }
   }
 }

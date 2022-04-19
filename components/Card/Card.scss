@@ -5,19 +5,23 @@
     width: 400px;
     height: 400px;
   }
+
   &__content {
     width: calc(100% - 400px);
     padding-left: 90px;
     align-items: flex-start;
   }
+
   &__settings {
     width: calc(100% - 180px - 40px);
   }
+
   &__stock {
     width: 180px;
     padding: 34px 17px 37px;
     background: #F5F5F5;
     margin-left: auto;
+
     &-title {
       color: $green;
       font-size: 12px;
@@ -25,30 +29,36 @@
       font-weight: 700;
       margin-bottom: 37px;
     }
+
     &-text {
       font-size: 12px;
       line-height: 1.3;
       font-weight: 700;
     }
+
     &-button {
       margin-top: 35px;
     }
   }
+
   &__settings {
     &-line {
       display: flex;
       align-items: center;
       margin-bottom: 25px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
+
     &-name {
       width: 130px;
       min-width: 130px;
       line-height: 21px;
       font-weight: 700;
     }
+
     &-list {
       display: flex;
       flex-wrap: wrap;
@@ -56,9 +66,11 @@
       justify-content: flex-end;
       width: calc(100% - 130px);
     }
+
     &-item {
       margin-left: 15px;
     }
+
     &-desc {
       width: calc(100% - 130px);
       padding-left: 15px;
@@ -69,45 +81,254 @@
       color: $green;
     }
   }
+
   &__data {
     position: relative;
     margin-top: 60px;
     width: 100%;
   }
+
   &__price {
     width: 40%;
     min-height: 112px;
+
     &-main {
       font-size: 28px;
       line-height: 1.3;
       font-weight: 700;
     }
+
     &-list {
       margin-top: 7px;
     }
+
     &-item {
       line-height: 1.3;
       margin-bottom: 3px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
+
   &__controls {
     width: 60%;
     justify-content: flex-end;
     align-items: flex-start;
   }
+
   &__incdec {
     margin-right: 40px;
     width: 118px;
   }
+
   &__button-add {
     width: 180px;
   }
+
   &__desc {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .card {
+    &__img {
+      width: 350px;
+      height: 420px;
+    }
+
+    &__content {
+      width: calc(100% - 350px);
+      padding-left: 30px;
+    }
+
+    &__settings {
+      width: calc(100% - 160px);
+
+      &-name {
+        width: 100px;
+        min-width: 100px;
+      }
+
+      &-item {
+        margin-left: 10px;
+      }
+    }
+
+    &__stock {
+      width: 160px;
+    }
+
+    &__incdec {
+      margin-right: 10px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    &__wrap {
+      position: relative;
+      padding-bottom: calc(115px + 40px)
+    }
+
+    &__img {
+      width: 320px;
+      height: 363px;
+    }
+
+    &__content {
+      width: calc(100% - 320px);
+    }
+
+    &__settings {
+      width: 100%;
+      margin-bottom: 20px;
+
+      &-list {
+        width: calc(100% - 100px);
+      }
+
+      &-line {
+        justify-content: space-between;
+        margin-bottom: 18px;
+      }
+    }
+
+    &__stock {
+      width: 100%;
+      padding: 15px 20px;
+
+      &-title {
+        margin-bottom: 15px;
+      }
+
+      &-button {
+        margin-top: 15px;
+      }
+    }
+
+    &__data {
+      min-height: 115px;
+      margin-top: 40px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    &__wrap {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    &__data {
+      position: relative;
+      min-height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card {
+    &__img {
+      height: 250px;
+    }
+
+    &__settings {
+      &-line {
+        margin-bottom: 15px;
+      }
+
+      &-name {
+        font-size: 15px;
+      }
+    }
+
+    &__stock {
+
+      &-title,
+      &-text {
+        font-size: 14px;
+      }
+    }
+
+    &__price {
+      &-item {
+        font-size: 15px;
+      }
+    }
+
+    &__desc {
+      position: relative;
+      order: 3;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .card {
+    &__img {
+      height: 200px;
+    }
+
+    &__settings {
+      &-line {
+        margin-bottom: 10px;
+      }
+
+      &-name {
+        font-size: 13px;
+      }
+
+      &-item {
+        padding: 5px 10px 5px;
+      }
+    }
+
+    &__stock {
+
+      &-title,
+      &-text {
+        font-size: 13px;
+      }
+    }
+
+    &__price {
+      &-main {
+        font-size: 26px;
+      }
+
+      &-item {
+        font-size: 14px;
+      }
+    }
+
+    &__desc {
+      position: relative;
+      order: 3;
+      margin-top: 10px;
+      font-size: 14px;
+    }
   }
 }

@@ -5,40 +5,16 @@ export default {
       map: null,
       placemark: null,
       position: [],
-      interval: null
+    }
+  },
+  setup() {
+    let isMapLoaded = useState('isMapLoaded');
+    return {
+      isMapLoaded
     }
   },
   methods: {
-    async appendScript() {
-      if (!document.getElementById('script-ymaps')) {
-        const script = document.createElement('script');
-        script.id = 'script-ymaps';
-        document.body.append(script);
-        script.setAttribute('async', '');
-        script.setAttribute('defer', '');
-        const response = await fetch('https://api-maps.yandex.ru/2.1/?lang=ru_RU');
-        if (response.ok) {
-          const text = await response.text();
-          script.innerHTML = text;
-        }
-      } 
-    },
     createMap() {
-      if (!window.ymaps) {
-        new Promise((res)=>{
-          setTimeout(()=>{
-            res();
-          }, 500);
-        }).then(()=>{
-          this.initMap();
-        });
-        return false;
-      }
-
-      this.initMap();
-
-    },
-    initMap() {
       ymaps.ready(()=>{
         this.map = new ymaps.Map(this.id, {
           center: this.position,
@@ -55,9 +31,12 @@ export default {
       });
     }
   },
-  async mounted() {
+  mounted() {
     this.position = this.pos.split(', ');
-    await this.appendScript();
+
+    if (!this.isMapLoaded) {
+      this.isMapLoaded = !this.isMapLoaded;
+    }
     this.createMap();
   },
   props: {

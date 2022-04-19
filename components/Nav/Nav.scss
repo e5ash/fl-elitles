@@ -5,12 +5,14 @@
     .nav {
       &__item {
         color: #fff;
+
         &:hover {
           color: $green;
         }
       }
     }
   }
+
   &_fw300 {
     .nav {
       &__item {
@@ -18,23 +20,28 @@
       }
     }
   }
+
   &_row {
     .nav {
       &__item {
         margin-right: 35px;
+
         &:last-of-type {
           margin-right: 0;
         }
       }
     }
   }
+
   &_col {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
     .nav {
       &__item {
         margin-bottom: 10px;
+
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -43,3 +50,22 @@
   }
 }
 
+@media screen and (max-width: 1220px) {
+  .nav {
+    &_row .nav {
+      &__item {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    &_row .nav {
+      &__item {
+        margin-right: 15px;
+      }
+    }
+  }
+}

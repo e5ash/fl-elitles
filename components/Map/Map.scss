@@ -2,10 +2,48 @@
   &_sm {
     height: 380px;
   }
+
   &_md {
     height: 524px;
   }
+
   &_mb {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map {
+    &_md {
+      height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map {
+    &_sm {
+      height: 250px;
+    }
+
+    &_md {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .map {
+    &_sm {
+      height: 200px;
+    }
+
+    &_md {
+      height: 250px;
+    }
+
+    &_mb {
+      margin-bottom: 25px;
+    }
   }
 }

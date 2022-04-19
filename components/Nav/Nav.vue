@@ -1,8 +1,8 @@
 <template>
-  <nav class="nav" :class="[classParent, mods]">
+  <nav class="nav" :class="[classParent, classOpen, mods]">
     <template v-for="link in links" :key="link.id">
       <router-link :to="link.href" custom v-slot="{ navigate, href }">
-        <a class="nav__item" :href="href" @click="navigate">{{ link.title }}</a>
+        <a class="nav__item" :href="href" @click="navigate, navOpen != navOpen">{{ link.title }}</a>
       </router-link>
     </template>
   </nav>
