@@ -2,8 +2,22 @@ export default {
   name: 'Check',
   data() {
     return {
+      block: 'check',
       isChecked: false,
-      classChecked: 'check_checked'
+      classChecked: 'check_checked',
+      compMods: []
+    }
+  },
+  computed: {
+    modsBEM() {
+      let arr = [];
+
+      this.compMods.map((mod)=>{
+        mod = `${this.block}_${mod}`;
+        arr.push(mod);
+      });
+
+      return arr;
     }
   },
   methods: {
@@ -28,6 +42,9 @@ export default {
       }
     }
   },
+  created() {
+    this.compMods = this.mods.split(', ');
+  },
   mounted() {
     if (this.index == 0) {
       this.$emit('update:checked', this.value);
@@ -35,6 +52,7 @@ export default {
     }
   },
   props: {
+    mods: String,
     index: String,
     name: String,
     checked: String,

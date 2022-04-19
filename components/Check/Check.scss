@@ -2,25 +2,79 @@
 
 .check {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 6.5px 14.5px 5.5px;
   transition: .3s;
-  font-size: 12px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: #BEBEBE;
-  border: 1px solid #BEBEBE;
-  border-radius: 5px;
-  text-transform: uppercase;
   cursor: pointer;
+  position: relative;
   input {
     display: none;
   }
-  &_checked {
-    color: $green;
-    border-color: $green;
-    cursor: default;
+  &_line {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6.5px 14.5px 5.5px;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &.check {
+      &_checked {
+        color: $green;
+        border-color: $green;
+        cursor: default;
+      }
+    }
+  }
+  &_radio {
+    min-height: 24px;
+    padding-left: 29px;
+    padding-top: 5px;
+    &:before, &:after {
+      content: '';
+      transition: .3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+    }
+    &:before {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #BEBEBE;
+    }
+    &:after {
+      z-index: 1;
+      width: 12px;
+      height: 12px;
+      background: $green;
+      margin-top: 6px;
+      margin-left: 6px;
+      opacity: 0;
+      transform: scale(0);
+    }
+    .check {
+      &__value {
+        font-size: 12px;
+        line-height: 1.3;
+      }
+    }
+    &.check {
+      &_checked {
+        color: $green;
+        border-color: $green;
+        cursor: default;
+        &:before {
+          border-color: $green;
+        }
+        &:after {
+          background: $green;
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
   }
 }

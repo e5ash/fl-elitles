@@ -1,7 +1,7 @@
 <template>
   <div class="card block">
     <div class="case">
-      <div class="card__title block__title h2">Доска обрезная сосна, ель</div>
+      <div class="card__title block__title h2">{{ name }}</div>
       <div class="card__wrap row">
         <div class="card__img img">
           <img src="~/assets/images/card-image.jpg" alt="">
@@ -15,6 +15,7 @@
                   class="card__settings-item" 
                   v-for="(item, index) in setting.items.list" 
                   :key="item.id" 
+                  mods="line"
                   :index="index" 
                   :name="setting.items.name" 
                   :value="item"
@@ -31,15 +32,15 @@
           </div>
           <div class="card__data row">
             <div class="card__price">
-              <div class="card__price-main">{{ toPriceFormat(prices.main) }} руб.</div>
+              <div class="card__price-main">{{ toPriceFormat(price) }} ₽</div>
               <div class="card__price-list" v-if="prices.items">
                 <div class="card__price-item" v-for="price in prices.items" :key="price.id">{{ toPriceFormat(price[0]) }} {{ price[1] }}</div>
               </div>
             </div>
             <div class="card__desc">*  сумма товара высчитывается поштучно</div>
             <div class="card__controls row">
-              <Incdec classParent="card__incdec" max="1000" />
-              <Button classParent="card__button-add" mods="sm, green">в корзину</Button>
+              <Incdec classParent="card__incdec" v-model:value="count" max="1000" />
+              <Button classParent="card__button-add" mods="sm, green" @click="addToCart">в корзину</Button>
             </div>
           </div>
         </div>

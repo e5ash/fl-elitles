@@ -26,6 +26,7 @@ export default {
     type: String,
     name: String,
     title: String,
+    value: String,
     placeholder: String,
     requred: Boolean
   }

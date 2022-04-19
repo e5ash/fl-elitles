@@ -48,6 +48,8 @@ export default {
       } else {
         this.isMax = false;
       }
+
+      this.$emit('update:value', this.value);
     }
   },
   mounted() {

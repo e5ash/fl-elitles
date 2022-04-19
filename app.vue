@@ -4,8 +4,13 @@
   </NuxtLayout>
 </template>
 <script setup>
+
 const route = useRoute();
 const title = route.meta.title;
+
+useState('totalCount', () => 0);
+useState('totalSum', () => 0);
+useState('cart', () => []);
 
 useHead({
   title: `${title} - ЭЛИТЛЕС`,

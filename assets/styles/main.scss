@@ -11,7 +11,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
+html, body, #__nuxt {
   min-height: 100vh;
 }
 
@@ -199,4 +199,13 @@ img, svg, path, circle, rect, line {
   &__title {
     margin-bottom: 50px;
   }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+#__nuxt {
+  display: flex;
+  flex-direction: column;
 }

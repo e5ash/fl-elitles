@@ -1,9 +1,14 @@
+import { toPriceFormat, setLsCount, setLsSum, setLsProducts, getLsProducts } from '~/utils';
+
+
 export default {
   name: 'Card',
+  
   data() {
     return {
+      name: 'Доска обрезная сосна, ель',
+      count: 1,
       prices: {
-        main: 3000,
         items: [
           [1000, 'за шт.'],
           [1100, 'за м²'],
@@ -54,9 +59,49 @@ export default {
       ]
     }
   },
+  computed: {
+    price() {
+      return this.count * this.prices.items[0][0];
+    }
+  },
+  setup() {
+    let totalCount = useState('totalCount');
+    let totalSum = useState('totalSum');
+    let products = useState('products');
+    return {
+      totalCount,
+      totalSum,
+      products
+    }
+  },
   methods: {
-    toPriceFormat(value) {
-      return value.toLocaleString('ru');
+    toPriceFormat,
+    setLsCount,
+    setLsSum,
+    setLsProducts,
+    getLsProducts,
+    addToCart() {
+      let product = {
+        name: this.name,
+        count: this.count,
+        prices: this.prices
+      }
+
+      product.settings = this.settings.filter((setting)=>{
+        if (setting?.items?.value) 
+          return setting.items.value;
+      });
+
+      this.totalCount += this.count;
+      this.totalSum += this.price;
+
+      this.setLsCount(this.count);
+      this.setLsSum(this.price);
+      this.setLsProducts(product);
+
+      this.products = this.getLsProducts();
+      
+      this.$router.push('/order');
     }
   }
 }
