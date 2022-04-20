@@ -1,4 +1,4 @@
-import { toPriceFormat, setLsCount, setLsSum, setLsProducts, getLsProducts } from '~/utils';
+import { toPriceFormat, setLsCount, setLsSum, setLsProducts, getLsProducts, scrollTop } from '~/utils';
 
 
 export default {
@@ -80,6 +80,7 @@ export default {
     setLsSum,
     setLsProducts,
     getLsProducts,
+    scrollTop,
     addToCart() {
       let product = {
         name: this.name,
@@ -101,6 +102,7 @@ export default {
 
       this.products = this.getLsProducts();
       
+      this.scrollTop();
       this.$router.push('/order');
     }
   }
