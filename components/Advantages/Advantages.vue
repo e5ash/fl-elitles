@@ -1,5 +1,5 @@
 <template>
-  <div class="advantages" :class="classParent">
+  <div class="advantages">
     <div class="case">
       <div class="advantages__list row">
         <div class="advantages__item" v-for="item in items" :key="item.id">

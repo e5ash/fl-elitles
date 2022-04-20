@@ -1,7 +1,7 @@
 <template>
   <div class="info block">
-    <div class="case">
-      <div class="info__title block__title h2">{{ title }}</div>
+    <Case>
+      <H2 class="info__title block__title">{{ title }}</H2>
       <div class="info__wrap row">
         <div class="info__left">
           <slot name="left"></slot>
@@ -10,7 +10,7 @@
           <slot name="right"></slot>
         </div>
       </div>
-    </div>
+    </Case>
   </div>
 </template>
 <script src="./Info.js"></script>

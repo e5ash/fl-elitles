@@ -1,6 +1,6 @@
 <template>
   <div class="breadcrumb">
-    <div class="case">
+    <Case>
       <div class="breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList">
         <div class="breadcrumb__item" v-for="(crumb, index) in crumbs" :key="index" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
           <router-link :to="crumb" v-if="index < crumbs.length - 1" :title="crumb.meta.title" itemprop="item">
@@ -12,7 +12,7 @@
           <meta itemprop="position" :content="index + 1">
         </div>
       </div>
-    </div>
+    </Case>
   </div>
 </template>
 <script src="./Breadcrumb.js"></script>

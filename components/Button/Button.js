@@ -1,3 +1,5 @@
+import { toLink } from '~/utils';
+
 export default {
   name: 'Button',
   data() {
@@ -18,11 +20,13 @@ export default {
       return arr;
     }
   },
+  methods: {
+    toLink
+  },
   created() {
     this.compMods = this.mods.split(', ');
   },
   props: {
-    classParent: String,
     mods: String,
     href: String
   }

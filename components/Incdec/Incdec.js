@@ -56,7 +56,6 @@ export default {
     this.maxValue = this.max ? Number(this.max) : this.maxValue;
   },
   props: {
-    classParent: String,
     max: Number
   }
 }

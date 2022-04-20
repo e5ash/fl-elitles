@@ -1,0 +1,45 @@
+.case {
+  position: relative;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  .case {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .case {
+    width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .case {
+    width: 730px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .case {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .case {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .case {
+    width: 100%;
+  }
+}

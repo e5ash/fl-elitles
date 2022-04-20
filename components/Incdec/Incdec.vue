@@ -1,5 +1,5 @@
 <template>
-  <div class="incdec" :class="classParent">
+  <div class="incdec">
     <div class="incdec__button incdec__button_plus" :class="isMax ? disabled : null" @click="plusValue">+</div>
     <input class="incdec__input" type="tel" v-model="value" @keydown="handeKeyPress" @focusout="handeOut">
     <div class="incdec__button incdec__button_minus" :class="isMin ? disabled : null" @click="minusValue">-</div>

@@ -1,3 +1,5 @@
+import { toLink } from '~/utils';
+
 export default {
   name: 'Nav',
   data() {
@@ -22,9 +24,21 @@ export default {
       ],
     }
   },
+  setup() {
+    let navOpen = useState('navOpen');
+    return {
+      navOpen
+    }
+  },
+  methods: {
+    toLink,
+    closeNav() {
+      if (this.navOpen) {
+        this.navOpen = false;
+      }
+    }
+  },
   props: {
-    classParent: String,
-    classOpen: String,
     mods: String
   }
 }

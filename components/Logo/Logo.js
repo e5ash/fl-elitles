@@ -1,6 +1,13 @@
+import { toLink } from '~/utils';
+
 export default {
   name: 'Logo',
-  props: {
-    classParent: String
-  }
+  data() {
+    return {
+      href: '/'
+    }
+  },
+  methods: {
+    toLink
+  },
 }

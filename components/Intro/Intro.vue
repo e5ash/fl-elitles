@@ -1,12 +1,12 @@
 <template>
   <div class="intro bgw">
-    <div class="case">
+    <Case class="case">
       <div class="intro__inner">
-        <div class="intro__title h1">Погонажные изделия <br> из сибирской лиственницы</div>
-        <Button classParent="intro__button" mods="md, green" href="/catalog">Посмотреть каталог</Button>
+        <H1 class="intro__title h1">Погонажные изделия <br> из сибирской лиственницы</H1>
+        <Button class="intro__button" mods="md, green" href="/catalog">Посмотреть каталог</Button>
       </div>
-    </div>
-    <Advantages classParent="intro__advantages" />
+    </Case>
+    <Advantages class="intro__advantages" />
     <div class="intro__bg bg">
       <img src="~assets/images/intro-bg.jpg" alt="">
     </div>

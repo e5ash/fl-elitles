@@ -1,7 +1,7 @@
 <template>
   <div class="card block">
-    <div class="case">
-      <div class="card__title block__title h2">{{ name }}</div>
+    <Case>
+      <H2 class="card__title block__title">{{ name }}</H2>
       <div class="card__wrap row">
         <div class="card__img img">
           <img src="~/assets/images/card-image.jpg" alt="">
@@ -28,24 +28,24 @@
           <div class="card__stock">
             <div class="card__stock-title">В наличии на складе</div>
             <div class="card__stock-text">Ленинградская область, деревня Екатериновка, 8-Марта, 188</div>
-            <Button classParent="card__stock-button" mods="xs, green" href="/contacts">НА карте</Button>
+            <Button class="card__stock-button" mods="xs, green" href="/contacts">НА карте</Button>
           </div>
           <div class="card__data row">
             <div class="card__price">
-              <div class="card__price-main">{{ toPriceFormat(price) }} ₽</div>
+              <div class="card__price-main">{{ toPriceFormat(price) }} руб.</div>
               <div class="card__price-list" v-if="prices.items">
                 <div class="card__price-item" v-for="price in prices.items" :key="price.id">{{ toPriceFormat(price[0]) }} {{ price[1] }}</div>
               </div>
             </div>
             <div class="card__desc">*  сумма товара высчитывается поштучно</div>
             <div class="card__controls row">
-              <Incdec classParent="card__incdec" v-model:value="count" max="1000" />
-              <Button classParent="card__button-add" mods="sm, green" @click="addToCart">в корзину</Button>
+              <Incdec class="card__incdec" v-model:value="count" max="1000" />
+              <Button class="card__button-add" mods="sm, green" @click="addToCart">в корзину</Button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Case>
   </div>
 </template>
 <script src="./Card.js"></script>

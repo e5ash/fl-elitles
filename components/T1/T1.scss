@@ -1,0 +1,25 @@
+.t1 {
+  line-height: 1.7;
+  font-weight: 300;
+
+  p {
+    margin-bottom: 27px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .t1 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .t1 {
+    font-size: 14px;
+  }
+}
+

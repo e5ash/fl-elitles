@@ -1,7 +1,7 @@
 <template>
   <header class="header bgw" id="header">
     <div class="header__panel">
-      <div class="case">
+      <Case>
         <div class="header__panel-wrap row">
           <div class="header__contacts row">
             <div class="header__contact">
@@ -13,13 +13,13 @@
           </div>
           <Crt classParent="header__cart" />
         </div>
-      </div>
+      </Case>
     </div>
     <div class="header__inner">
-      <div class="case">
+      <Case>
         <div class="header__inner-wrap row">
-          <Logo classParent="header__logo" />
-          <Nav classParent="header__nav" :classOpen="navOpen ? 'header__nav_show' : null" mods="nav_row nav_white" />
+          <Logo class="header__logo" />
+          <Nav class="header__nav" :class="navOpen ? 'header__nav_show' : null" mods="nav_row nav_white" />
           <div class="header__phone">
             <a href="tel:+78129420095">
               <span>(812) 942-00-95</span>
@@ -43,11 +43,11 @@
             <div></div>
           </div>
         </div>
-      </div>
+      </Case>
     </div>
 
     <template v-if="!isMain">
-      <Breadcrumb />
+      <Breadcrumb class="header__breadcrumb" />
       <div class="header__bg bg">
         <img src="~/assets/images/intro-bg.jpg" alt="" />
       </div>
