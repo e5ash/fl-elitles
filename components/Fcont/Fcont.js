@@ -18,7 +18,4 @@ export default {
       ]
     }
   },
-  props: {
-    classParent: String
-  }
 }
