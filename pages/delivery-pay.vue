@@ -1,7 +1,6 @@
 <template>
   <Info title="Доставка и оплата">
     <template #left>
-      <Script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" />
       <Map id="map-delivery-map" mods="map_md" pos="60.002458, 30.365150" />
     </template>
     <template #right>
@@ -12,8 +11,15 @@
     </template>
   </Info>
 </template>
-<script setup>
-  definePageMeta({
-    title: 'Доставка и оплата'
-  });
+<script>
+  export default {
+    head: {
+      title: 'Доставка и оплата'
+    },
+    setup() {
+      definePageMeta({
+        title: 'Доставка и оплата'
+      });
+    }
+  }
 </script>

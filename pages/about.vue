@@ -14,8 +14,16 @@
   </Info>
 </template>
 
-<script setup>
-  definePageMeta({
-    title: 'О нас'
-  });
+<script>
+  export default {
+    scrollToTop: true,
+    head: {
+      title: 'О нас'
+    },
+    setup() {
+      definePageMeta({
+        title: 'О нас'
+      });
+    }
+  }
 </script>

@@ -55,3 +55,21 @@ export function setLsProducts(item) {
 export function updateLsProducts(value) {
   localStorage.setItem('products', JSON.stringify(value));
 }
+
+export function scrollTop() {
+  // window.scrollTo(0,0);
+  document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+export function toLink(href, before, after) {
+    if (before) {
+      before();
+    }
+
+    scrollTop();
+    this.$router.push(href);
+
+    if (after) {
+      after();
+    }
+}

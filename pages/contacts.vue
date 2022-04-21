@@ -1,7 +1,6 @@
 <template>
   <Info class="info_contacts" title="Контакты">
     <template #left>
-      <Script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" />
       <Map
         id="map-contacts-1"
         mods="map_sm map_mb"
@@ -10,7 +9,7 @@
       <Map id="map-contacts-2" mods="map_sm" pos="60.002458, 30.365150" />
     </template>
     <template #right>
-      <div class="info__text t2">
+      <T2 class="info__text">
         <h3>Офис</h3>
         <p>г. Санкт-Петербург, ул. Политехническая, д. 22, оф. 152</p>
         <p>Пн-Пт 9:00-18:00 <br />Сб-Вс -o выходной</p>
@@ -40,12 +39,19 @@
           <br />Р/с: 40702810999999999999 <br />БИК: 044030723 <br />Кор/счет:
           3010810100000000723
         </p>
-      </div>
+      </T2>
     </template>
   </Info>
 </template>
-<script setup>
-definePageMeta({
-  title: "Контакты",
-});
+<script>
+  export default {
+    head: {
+      title: 'Контакты'
+    },
+    setup() {
+      definePageMeta({
+        title: 'Контакты'
+      });
+    }
+  }
 </script>

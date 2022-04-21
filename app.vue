@@ -14,7 +14,7 @@ useState('cart', () => []);
 useState('isMapLoaded', () => false)
 
 useHead({
-  title: `${title} - ЭЛИТЛЕС`,
+  title: `${title}`,
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   charset: 'utf-8',
   meta: [

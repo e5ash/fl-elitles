@@ -1,8 +1,15 @@
 <template>
   <Catalog />
 </template>
-<script setup>
-  definePageMeta({
-    title: 'Каталог'
-  });
+<script>
+  export default {
+    head: {
+      title: 'Каталог'
+    },
+    setup() {
+      definePageMeta({
+        title: 'Каталог'
+      });
+    }
+  }
 </script>
